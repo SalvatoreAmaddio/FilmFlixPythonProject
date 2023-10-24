@@ -1,0 +1,5 @@
+1. Print all films of a particular genre
+2. Print all films of a particular year
+3. Print all films of a particular rating
+4. Go Back
+5. Exit The Program

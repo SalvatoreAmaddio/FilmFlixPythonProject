@@ -1,0 +1,7 @@
+1. All
+2. Title
+3. Year of Release
+4. Rating
+5. Duration
+6. Genre
+7. GoBack
