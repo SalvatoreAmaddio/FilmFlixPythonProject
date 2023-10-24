@@ -1,13 +1,18 @@
 from flask import Flask
 from menu import *
 
-menu = Menu()
-start = True
+main = Flask(__name__)
+@main.route("/")
+def runMenu():
+    menu = Menu()
+    start = True
 
-print("Hello and welcome to FilmFlix:")
-while(start):
-    menu.displayMain()
-    menu.getInput()
-    start=menu.getExit()
+    print("Hello and welcome to FilmFlix:")
+    while(start):
+        menu.displayMain()
+        menu.getInput()
+        start=menu.getExit()
 
+if __name__ == '__main__':
+    main.run()
 
