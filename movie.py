@@ -10,7 +10,7 @@ class Movie:
     userInput=0
 
     def __init__(self):
-        with open("FilmFlixPythonProject/files/amendFields.txt") as AmendOptions:
+        with open("files/amendFields.txt") as AmendOptions:
             self.AmendOptions = AmendOptions.read()
 
     def displayAmendOptions(self):

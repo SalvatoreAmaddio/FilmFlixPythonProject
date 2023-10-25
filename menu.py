@@ -8,13 +8,13 @@ class Menu:
     userInput=''
     exit = False
     movie = Movie()
-    db = Database("FilmFlixPythonProject/filmflix.db")
+    db = Database("filmflix.db")
 
     def __init__(self):
         self.db.connect()
-        with open("FilmFlixPythonProject/files/MainMenu.txt") as mainMenu:
+        with open("files/MainMenu.txt") as mainMenu:
             self.mainMenu = mainMenu.read()
-        with open("FilmFlixPythonProject/files/reports.txt") as reports:
+        with open("files/reports.txt") as reports:
             self.reports = reports.read()
 
     def displayMain(self):
